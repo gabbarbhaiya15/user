@@ -25,8 +25,8 @@ app.use(cors({credentials: true,
 origin:[ 'http://localhost:3000' ]
 }));
 app.use(cookieParser());
-const uri = process.env.MONGODB_URI;
-mongoose.connect(uri,{
+
+mongoose.connect('mongodb://127.0.0.1:27017/Project5',{
 
 useNewUrlParser: true,
 useUnifiedTopology: true,
