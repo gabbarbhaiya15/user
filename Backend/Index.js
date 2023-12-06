@@ -25,7 +25,7 @@ app.use(cors({credentials: true,
 origin:[ 'http://localhost:3000' ]
 }));
 app.use(cookieParser());
-mongoose.connect('mongodb://localhost:27017/Project5',{
+mongoose.connect('mongodb://127.0.0.1:27017/Project5',{
 
 useNewUrlParser: true,
 useUnifiedTopology: true,
