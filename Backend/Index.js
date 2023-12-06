@@ -19,13 +19,14 @@ const allteams = require('./Controller/Allteam');
 const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-const  port = process.env.PORT || 10000;
+const  port = process.env.PORT || 5000;
 app.use(bodyParser.json() );
 app.use(cors({credentials: true,
 origin:[ 'http://localhost:3000' ]
 }));
 app.use(cookieParser());
-mongoose.connect('mongodb://127.0.0.1:27017/Project5',{
+const uri = process.env.MONGODB_URI;
+mongoose.connect(uri,{
 
 useNewUrlParser: true,
 useUnifiedTopology: true,
