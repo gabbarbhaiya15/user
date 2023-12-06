@@ -1,0 +1,25 @@
+.card {
+    width: 230px;
+    height: 254px;
+    border-radius: 30px;
+    color: aliceblue;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+
+   }
+   
+   .user-photo{
+    width: 30%;
+    height: 30%;
+    clip-path: circle(at center);
+    margin-bottom: -2px;
+   }
+   h5{
+
+    margin-top: -2px;
+   }
+   ul{
+    text-align: left;
+
+   }
